@@ -1,0 +1,68 @@
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<style> 
+.keyframe {
+  width: 140px;
+  height: 140px;
+  background-color: lightsteelblue;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color:purple; left:0px;}
+  25%  {background-color:royalblue; left: 33px;}
+  50%  {background-color:lightblue; left: 66px;}
+  75%  {background-color:turqoise; left: 33px;}
+  100% {background-color: blueviolet; left: 0px;}
+}
+
+.extend {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transition: width 4s, height 3s;
+  color: white;
+}
+
+.extend:hover {
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  color: lightblue;
+}
+</style>
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	</head>
+
+	<body>
+	<div id="main">
+	<h3>Keyframes</h3>
+	<div class="keyframe">Ich bin Quadrati</div>
+	<h3>Transition</h3>
+	<div class="extend">GET IN MA BELLY!!!</div>
+	<h3>GIF</h3>
+	<img src="/images/roundroundroundround.gif"></img>
+	<h3>SVG</h3>
+	<svg width="250" height="250">
+  	<circle cx="100" cy="100" r="75"
+  	stroke="royalblue" stroke-width="10" fill="blueviolet" />
+	</svg>	
+	<h3>Canvas</h3>
+	<canvas id="myCanvas" width="300" height="300" style="border:2.5px solid  blueviolet;"></canvas>
+		<script>
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.arc(100,100,75,0,2*Math.PI);
+		ctx.stroke();
+		</script> 
+	</body>
+	</div>
+</html>

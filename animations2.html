@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animationen</title>
+    <link rel="stylesheet" href="assets/css/animations2.css">
+
+    <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+    </script>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="dropdown">
+                  </div>
+        <script>
+        /* toggle between hiding and showing the dropdown content */
+            function myFunction() {
+               document.getElementById("myDropdown").classList.toggle("show"); //adding a class show
+            }
+        // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+               if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                     var openDropdown = dropdowns[i];
+                     if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                     }
+                  }
+               }
+            }
+        </script>
+    </header>
+
+    <main class="main">        
+        <section>
+            <h1>Scroll Down to Reveal Elements &#8595;</h1>
+        </section>
+        <section>
+          <div class="container reveal fade-bottom">
+            <h2>Caption</h2>
+            <div class="text-container">
+              <div class="text-box">
+		<img src="https://media.tenor.com/Z6gmDPeM6dgAAAAM/dance-moves.gif"></img>                
+              </div>
+              <div class="text-box">
+                <h3>Section Text</h3>
+                <img src="https://media.tenor.com/Z6gmDPeM6dgAAAAM/dance-moves.gif"></img>              
+		</div>
+              <div class="text-box">
+                <h3>Section Text</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                  eius molestiae perferendis eos provident vitae iste.
+                </p>
+              </div>
+ <div class="text-box">
+                <h3>Section Text</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                  eius molestiae perferendis eos provident vitae iste.
+                </p>
+              </div>
+ <div class="text-box">
+                <h3>CAAAATS</h3>
+                <img src="https://media.tenor.com/ACRdPvWkNP4AAAAC/asdfmovie.gif"></img>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container reveal fade-left">
+            <h2>Caption</h2>
+            <div class="text-container">
+              <div class="text-box">
+                <h3>Section Text</h3>
+                <img src="https://i.pinimg.com/originals/a2/b3/5b/a2b35bcb7778a5d2836bf14723604643.gif"></img>
+              </div>
+              <div class="text-box">
+                <h3>Section Text</h3>
+                <p>
+                  Beep beep I'm a sheep
+		I said beep beep I'm a sheep
+		Beep beep I'm a sheep
+		I said beep beep I'm a sheep
+		Beep beep I'm a sheep
+		I said beep beep I'm a sheep
+		Beep beep I'm a sheep
+		I said beep beep I'm a sheep                
+		</p>
+              </div>
+              <div class="text-box">
+                <h3>Section Text</h3>
+                <img src="https://i.gifer.com/A78X.gif"></img>
+              </div>
+ 	<div class="text-box">
+                <h3>Ich mag Zuege</h3>
+                 
+		</div>
+            </div>
+          </div>
+        </section>
+    
+        <section>
+          <div class="container reveal fade-right">
+            <h2>Caption</h2>
+            <div class="text-container">
+              <div class="text-box">
+                <h3>Section Text</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                  eius molestiae perferendis eos provident vitae iste.
+                </p>
+              </div>
+              <div class="text-box">
+                <h3>Section Text</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                  eius molestiae perferendis eos provident vitae iste.
+                </p>
+              </div>
+              <div class="text-box">
+                <h3>Section Text</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                  eius molestiae perferendis eos provident vitae iste.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+</body>
+</html>
